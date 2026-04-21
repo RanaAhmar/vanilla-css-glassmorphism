@@ -68,3 +68,11 @@ The core effect relies on `backdrop-filter`. It is supported in:
 
 ## 📄 License
 This project is open-source and available under the [MIT License](LICENSE).
+
+
+---
+### 🏢 About Stackaura
+This project is proudly maintained backed and sponsored by **[Stackaura](https://www.stackaura.com/)**.
+We specialize in building high-performance web applications, scalable SaaS architectures, and premium digital solutions.
+👉 **[Visit Stackaura to supercharge your next project!](https://www.stackaura.com/)**
+
