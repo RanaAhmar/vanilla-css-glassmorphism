@@ -51,32 +51,7 @@ If you want to tweak the exact look, override the variables in your own CSS:
 ## 🛠 Available Classes
 
 | Class | Description |
-| :--- | :--- |
-| `.glass` | The base class that applies the `backdrop-filter` and transparent background. |
-| `.glass-card` | Adds padding, border-radius, and the subtle white border top/left highlight. |
-| `.glass-panel` | A larger variant designed for full-screen overlapping sidebars or modals. |
-| `.glass-button`| Interactive frosted glass button with hover states. |
-
-## 🌐 Browser Support
-The core effect relies on `backdrop-filter`. It is supported in:
-- Chrome 76+
-- Safari 9+ 
-- Edge 79+
-- Firefox 103+
-
-*Note: For unsupported browsers, it falls back to a slightly less transparent background color without the blur.*
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
-
-
----
-### 🏢 About Stackaura
-This project is proudly maintained backed and sponsored by **[Stackaura](https://www.stackaura.com/)**.
-We specialize in building high-performance web applications, scalable SaaS architectures, and premium digital solutions.
-👉 **[Visit Stackaura to supercharge your next project!](https://www.stackaura.com/)**
-
-
+| :
 ---
 
 ## 🚀 Discover More from Stackaura
@@ -94,3 +69,4 @@ If you found this tool useful, check out our other high-performance web utilitie
 - **Author:** [Ahmar Hussain](https://github.com/RanaAhmar)
 
 ---
+
