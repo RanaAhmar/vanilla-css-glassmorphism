@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla CSS Glassmorphism Demo</title>
+    <link rel="stylesheet" href="glassmorphism.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(45deg, #ff0099, #493240);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            overflow: hidden;
+        }
+
+        /* Animated background elements to prove the blur works */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+            width: 300px;
+            height: 300px;
+            top: 20%;
+            left: 20%;
+            z-index: -1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .circle:nth-child(2) {
+            background: linear-gradient(135deg, #f6bf26 0%, #e06c75 100%);
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            left: 70%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Background Orbs -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <!-- Glassmorphism Card -->
+    <div class="glass glass-card" style="max-width: 400px; text-align: center;">
+        <h1>Glassmorphism</h1>
+        <p style="line-height: 1.6; opacity: 0.9; margin-bottom: 2rem;">
+            This card is using the pure Vanilla CSS glassmorphism classes. Notice how the background elements blur beautifully underneath it.
+        </p>
+        <button class="glass-button">Click Me</button>
+    </div>
+
+</body>
+</html>
